@@ -3,56 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제호의 html</title>
+    <title>서제호의 포트폴리오</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+        header {
+            text-align: right;
+            padding: 10px ;
+        }
+        .profile {
+            border: 5px solid #555; /* 프로필 사진 주변의 보더를 추가 */
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px 0; /* 이미지 위아래 간격 */
+        }
+        .tech-stack {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .tech-stack img {
+            margin: 0 10px; /* 기술 스택 이미지 간격 */
+        }
+        .projects {
+            margin: 40px 0;
+        }
+        .projects .project {
+            width: calc(33.333% - 20px); /* 3개의 프로젝트를 일렬로 나열 */
+            margin: 0 10px; /* 프로젝트 카드 간격 */
+            display: inline-block;
+            vertical-align: top; /* 프로젝트 카드 정렬 */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* 반응형 디자인을 위한 미디어 쿼리가 필요할 수 있음 */
+    </style>
 </head>
-
 <body>
     
-    <p><strong>contact</strong>
-
-    <a href="https://github.com/lemonticsoul"><img src="https://simpleicons.org/icons/github.svg"width="50" height="30"style="float: right;"></a>
-    <a href="https://velog.io/@lemonticsoul/posts"><img src="https://simpleicons.org/icons/velog.svg"width="50" height="30" style="float: right;"></a>
-    </p>
-
+    <header>
+        
+        <div class="social-links">
+            <p><b>contact</b></p>
+            <a href="https://velog.io/@lemonticsoul/posts"><img src="https://simpleicons.org/icons/velog.svg" alt="Velog" width="30"></a>
+            <a href="https://github.com/lemonticsoul"><img src="https://simpleicons.org/icons/github.svg" alt="GitHub" width="30"></a>
+        </div>
+    </header>
 
     <hr>
-    <br>
 
-    <p><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTlfMTE4%2FMDAxNzEwODM0ODMyNDMz.U7qFtkNapT9_mg4Yp83_-ZoZmTP51Vsag8rYRXEmMgsg.MQdZ4Yh3zD2ekkc6-GjMdBfb4QV1YibNEBOMY81fVKAg.PNG%2FGroup.png&type=sc960_832" width="100" height="100" style="float: right;">
-    <b>안녕하세요 ! 저는 서제호입니다</b></p>
-    
-
-
-    <br>
-    <br>
-    <br>
-    
-
-
-    <p><b>MY Tech stack</b></p> 
-
-
-        <img src="https://simpleicons.org/icons/springboot.svg" width="100" height="60">
-
-        <img src="https://simpleicons.org/icons/springsecurity.svg" width="100" height="60">
-
-        <img src="https://simpleicons.org/icons/python.svg" width="100" height="60">
-
-
-
-
-    <br>
-    <br>
    
-
-
-    <p><b>Project</p>
-
-    <a href="https://mandomando.swygbro.com/"><img src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f465a706-e0d6-433d-b7ac-b3347b9a4588" width="100" height="50"></a>
+        <div class="intro" style="text-align: center;">
+        <h1>서제호입니다! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMTlfMTE4%2FMDAxNzEwODM0ODMyNDMz.U7qFtkNapT9_mg4Yp83_-ZoZmTP51Vsag8rYRXEmMgsg.MQdZ4Yh3zD2ekkc6-GjMdBfb4QV1YibNEBOMY81fVKAg.PNG%2FGroup.png&type=a340" alt="서제호 프로필" width=100 ="profile"></h1>
         
+        </div>
+        
+    <br>
+    <br>
+    <br>
+
+    <p style="text-align: center;"><b>기술스택</p>
+    <section class="tech-stack">
+
+        
+        <img src="https://simpleicons.org/icons/springboot.svg" alt="기술 1" width="100" height="100">
+        <img src="https://simpleicons.org/icons/spring.svg" alt="기술 2" width="100" height="100">
+        <img src="https://simpleicons.org/icons/springsecurity.svg" alt="기술 3" width="100" height="100">
+        <img src="https://simpleicons.org/icons/dbeaver.svg" alt="기술 4" width="100" height="100">
 
 
 
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    
+
+
+    <p style="text-align: center;"><b>PROJECT</p>
+    <section class="projects">
+        <div class="project">
+            <a href="https://mandomando.swygbro.com/"><img src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f465a706-e0d6-433d-b7ac-b3347b9a4588" alt="프로젝트 1" width="100%" height="auto">
+            </a>
+
+
+        </div>
+        
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>Designed and built by 서제호 with a lot of ☕</p>
+    </footer>
 
 </body>
 </html>
