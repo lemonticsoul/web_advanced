@@ -4,59 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서제호의 포트폴리오</title>
-    <link rel="stylesheet" href="styles.css"> <!-- 별도의 CSS 파일 연결 -->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css"> <!-- 별도의 CSS 파일 연결 -->
 </head>
 <body>
-    <header>
-        <div class="hi">
-            <img src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f412f596-626a-4018-bc91-883ba284e04b">
-        </div>
+    <nav class="top-nav">
+        <img class="top-logo" src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f634e24f-2015-49e5-bde3-a41b82027576" alt="logo"/>
+        <ul class="nav-items">
+            <li>Home</li>
+            <li>About</li>
+            <li>Tech Stack</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    
+    
         <!-- Social links here -->
-        <div class="social-links">
+        <div class="top-sns">
             <a href="https://velog.io/@lemonticsoul/posts"><img src="https://simpleicons.org/icons/velog.svg" alt="Velog"></a>
             <a href="https://github.com/lemonticsoul"><img src="https://simpleicons.org/icons/github.svg" alt="GitHub"></a>
+            <a href="https://www.instagram.com/library___ho/"><img src="https://simpleicons.org/icons/instagram.svg"></a>
         </div>
+    </nav>
+
+
+
+    <header>
+        <h1>안녕하세요! 👋<br>저는 <span>서제호</span>입니다!</h1>
+        <img src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f5089856-7541-4405-bca6-3be402ed7671" alt="서제호">
     </header>
 
+   
 
-
-
-    <div class="intro">
-        <h1>안녕하세요! <br>서제호의 포트폴리오입니다.</h1>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA8FBMVEX///8AAAD//v////0EAgAFAAD9//30v8T8///19PP8//z5+Pj//fz3v8b1v8ja2NnExMSLiont7e3k5OTW1NWko6JhYF/i4eG6uLc5NzZRUE//9/nQ0NDv7++/vryFg4ObmpgZFhd4d3ZYWFhMS0ptbGo1NDMqKSiwrq2gnp0iIB9BQUF1dHX/wc/46+sSEA8aGRg7ODn54uj00tr3ytLwwcvOoqbmt7zftroyIyJcREZsU1Sge4P75+3+x81PQD46Iia+kZfttsIgAwlcTE/aqrOpiIw+MC6Ma23WpK3RrLB6XV+VfoC/mp/6uMbrys43AEJTAAANyUlEQVR4nO1diXbayBJVI1ZLCAkQyCwWZjObwQvEyUzieeGNJ5mZF8///82rqhYYYQHGaJucvifHh4CAvurq6tq6kCQBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAYF3oGpZQ0uJehSBwTJGDHHZUqRE1IMJAIUxe0E56tEEgAvGUozN2i1jxpKMNaIezwEoBatcbu5+PfvqmSISPL/AJVi6QorF4EZ3OgpdLmrnpiS7X5ERCSnLGSYQzit9IFiR4XpZlnJ9oFjBR/FEqfeynCrqG980AIK3KjLEf1V8b2P79sQFOaLWMQc2o5nYQNEyzVatO+522narZQ7NRinnvNQBhvoLpQq81Y4rwwmupwI+KsyA6npvKxlXzAPnFVPXmw14NFNQgBEJqQUMOzFlqMNYa7Kk4grTYZxVfFKx2rTTpVIrYimCi+sYFt5qWfbgNk1iyhCYzHKOkkCB1aXqoM1e6KW6tUrndpNZKgkvJJPMkJw5hDefA8OLeDK0aGhp538gl5UOskgSl5HRyHHVo+Sa1XK5YRmT7popKF6aQtC2CnzKZSKedk0FVpYkOwzVG4cachwPShvXbQy+WR3CnegO1lMmw+6PisZj14weCnBxhgqyVnLY9cxGU6Gn1nIHs5WV0mk5zQWzudKpnBSoYdjxs9kYUsSVt5oqWTJR67QHXDBlVZZde3jW2f8TK9l8eamDMhvLKSSGL/8r2kbhXR/T6LR9GpDvyG3ugD8lkGErnlreH8iSARRz8bWZTwaoiz5jbd8YylvKKXrI5Mj2/fmwQqG5pWJjANXqkKHmhzFCW01DiteiHtzQBl+UEj5QtLiDGatoRoW7CAUp4QdDqU2BG9aJTTgjR6Gyno/jqfJbxob+feQpqF7hHdf9/VC9RvNYyR2+NHCYOJQr/wUKViO6j5GHTxXy8q5ypET9NZibIBtJdFgiRYkktJvjOtRnl6DUp+iA4e+nHocCLRZD8mWT8ICNUZ0oKSojJBiYGMlo7CJFn7XYEZigFA1OsmP2vRfNtg6uxZuoNOqAvYjQe5ZgwZrczs6NnWoYLdMmRuRwoUcBWoTn+Oh9k6ivQlXWrisw1K9TvLEWhVtWJS1DsYrdDJU9+2R1xbC393t6wDDFBhHY4WO8txN6mPAWUmUwmWFocBeq1kUxN7Dt0u5LAGoNv4hH0EOFhevjSiVuCc/on85D9ycuIRnjI0Bx/0QHgVuU0ZK0m6FJ2ZfziwOfkzjgjsD6o5vJ9s+0/7BQj5r4KCt5alIM7XZ9Eq0xT26EizFOoSLvVjIGm1l+uekWKbVwY5UXOIW2dLbnkhzo+nR6zwVHgAzUQ/LuK5QZ3tScfLZvo5eBYNofY9xEhmNfPurN3wgM29IZMdwlqD4yVG6Q4vvyBO8DOoUzmMJ9UuorJqhO2+Ht+jmcQluSw8uBDVCbXoZnuZHJDS5NeAwLlCoPz66pcOUdYh5TYfymhjSJCRRSvzXb3rHLsPKB4TAshg3u+PqARGHYqlQ69rCxfztHyw0cjEpYDE2/1oQxW5djjPaanTK6WsnwzJo2CGnyrWVre7B2gXF+bng9o2fGKZuWFXIwwgrYoE3aecuFRd20x+PeLnOrWZt17aFl9InlSig8GaYxYBNa1E25JIPmIBrrSsWdEuiwUfR2uwG2Uf3u/n4+v5vWPTaiNjKsnTDsI1Diau0AlMlGydNuvMxYtn6/yD8/a1o+v9Tu1G2KwxAZkirdGT1yUCAHf9y+aBYPO/ngBKelu0Umk8/n8Q/806ZbDHX81u77R30Mymgj7lpbMk/AY4UUW8UJD6p4LJP6ogGvDw/5jPb4mMlo19rUfU0D1dH5iUN/I8i935WglVVVRXXY6vcKXDO+wZgEhirM4MdPjD1oT7/88qQ9/fp5UXfNYikIM8N7NFS2nMp5jbt+N58vAPP7L/xS9IDfVnFwp2mPv8G8f1z8h7HPj98Y+3rnuqC4js4GjQSmS1hye3EBi+k8A5oCltA1/F3Q+NA9fJMZUl9o1x/gcz9rP+Dv1yVw/XrvuoIYjnzYhQ8iQRv+1dbEgLN7r4GW4MAHy3ki+/aamLqmXf/K2H817Xcgt0SGf2j1zSuaoTHk5dzbXyXL9/k1QeSoacs7Of2aoaoPvXQrMHzCecvnQT5/f1ziRLp1TQ5Pm4SkaWyK0bifk++1TObxMe/g4evTtabVYWa3GJYvGbv0OG9SX+b/AIYP+fyIsV+1B3ysTTffXETDNIy6RVhYLdSlW2ZKHfbpD9++P+czH57y109wC5ZafuqKtdE9MbytBVmdX//J2CfYML6yT39pj3+zTws3w2pYVlvWe7cAGf0Is6Ndw0w8XH+HWf4DGG5GiifsquDMREuSBv3xZs5GlkGXLp9oy19qiKdlfumSUp0lfXLZDoMcGbdNk1jk4baz/2lLmL2M9g0Y/pXJb6p7LM6cFYtUuz9q2Ns5tbS6eL4mAac1jLt/fuH6ilZo0bYE12pueVEXOIVsiVP4LY+r6DdYk6456DB+JCFJJe7w2LUa0/L0+VpzGALFjLb1dnr/LChSW6CdyZ0KAoafQUNco8b/+/FPeP1HXsu49C2vbU855yzY9pkKWf6y0DhBmsT8853rdcUJ7wXGyvVll6+sC3We/87Yd00Dnj+uP6ZAHWqa2yaRUEKTbFyVGhP22q6FbWU617ic4jpcTN0bTYMv/pCiGDUUGPeGePf88Mu3v2CETw+PsPP/ADGby66khYzRD9IyKOagi7eSarB1ngFH+Ahtubj/sr2T2ijcalgBUwPVmnvRw479OM+sNn2YiOeFmt4sswH7BsUb1m8CnBOvOk000iW1Pp1O6+prS6FGXndYDHUMmWxtanfLZ76MOEPY7s/Sm9lPYJiWxpizT2BFeN+7yIieymbPzraZNFHCX53aDAwq6sNtR+YO5YucV7S//1Flj8Rai5Le6DvaR1aioj9zqYQX1e+hmG6HE6f/5EHf0/wt7tVtc41QAG4TpUJhp+MYYk69FVRtmQcuvCwoWZ7ezxdgns7v6rt8io5z3suUEkclPUpOyUNoWQTKPaW2wrPEqV6vw43eKU1qjQgaVKByBEU8y1GRwkyUTLyDUZxYNrtnuZjjfo/L9zGDxRrPcOtMG1QXfLzyTkjrlPExBAubEeOQ0EddYx2tvYGdSl7UcfJWeWUmBg8swn5PTCHXvmQ9/cjiH52xkCsxEF3c9ffUrO2Ak4xpHfWmMcURw67cK1G2qyUdua/l6PTz6KgCfKoXOn5FnAydKB5rm4D9pV8cJ6S5GV+F4VdfDhiviwra0KCkU+8iiirhFlWZtwL+Fp26MGCdbdjFiSA1VHSyN3d2OtSNhhOdPW1vAkKL1qIhBei3GZQE7/E2S1fhr0WTKNYKgamBKjac0GENFmzuIYYOa0bHrw7lS9+NArOpJYNELts7NuDT0YCdH6ybIMtAnKSrHVJU3wVlgKcEU3QeIijIDqj5UNiV0NbluhiBHb76FMg8AhK2f0Hf2e/ZttFuB30OUmnzwzWhKlN02m7WCZoADZvmeb9GR8UHIR8NwpXfcHofBGq55dbHo0KLCHPgyi+G0tyhjMVVtygu4e74Pco+hNO+QilF0RgGg7TUdS5IhuGf59pAkw7WWReYwKjqgRjFsB1dRdnVZ1WaN+rfnH5EzQvoV0TbCJNaO6x8mwDkqQArPaRavV0oGx2HXyqIeG2LBe9gH4ZStkzzoozdf0t+T+PYI1ccOlY7fYKygv5OJE/HRN1fMCGtzm6hEedvrQQKaUhFwW8CprAv31RN+kZQUUusutHOqP7AP4Y2j3THhWEW45rcEvfpEylHqUueueQokM3iSRqsJfBrRCY/aOzXOdvTge0d8JyJXwxzI9oMX5VvRgdZVlNUJuPTiAwMU8aqSaGskjvV84mhU6UZH35O64Nkyq+YLZozo1gRJE/4xrem+MP4TSHB4s0dTu+7V0CCyZyaiF2/XZSt11WHR0O54p1v1Kht0tdoYG1s/+RfGakwykvGSI++AONv7PxEglSO1MPQYfzmUG7e4izaJ01iC821ruqcl4odyRx1dTkl2UYEU7wHbRzFVGrODjXCLLaMwc6UfJNaXs6oADmeBNeNBneOrkxxnbZ3OZV+g2++jU1nVm/wQpv+rmka8NBV14NiifeeNVQpNg6FN3R+oGKX/VY2DToO+irUa1JoElvrxlU+18CmtOhoDHdV9lEp3lYI5uKKJrAdWB9NX6F0eKT4clezOarE2ciq5qwxWzUK/ZfAHDnR8NpgfTCjWG2sCWPF6Iqh3qo554WS5VArnU8BdmgfUycLqmUyzIbOGyysGlh31xmJwvo8VBek+rjy76ihjzfzGiu0UMNgWjfFV6nu/BTN7iafcUbJOHfTIzJtq1F7qf7BNORoEl2X2ZNRHZh2fzQbsXPDKttsfT6PzZyMI6jQWTgntAOFIvHd7+WH2bpOOxo8CzWKcmh+gbx13OhKg3a327Ubkk4/syNT67dIc9lBwV6Z53YcUmgBoMhWfXnMCMrVwgDsETfc+jSjKRsNHDpbhUN7P+k6LKxScbnkT6JLt4HrsC2pKsZYWSvq0QSCGtUaSs0bhg2lf0bwiqoh/irkv9IgPQjZiecw/FWAuHv070WVrPJK6CdhwkTDasThh3IEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBARW+D/kU829Wk+e6gAAAABJRU5ErkJggg==" alt="서제호">
-    </div>
-
-    <h2 class="heading" style="text-align: center; margin-bottom:100px; ">기술스택</h2>
-    <section class="tech-stack">
-        <img src="https://simpleicons.org/icons/springboot.svg" alt="Spring Boot">
-        <img src="https://simpleicons.org/icons/spring.svg" alt="Spring">
-        <img src="https://simpleicons.org/icons/springsecurity.svg" alt="Spring Security">
-        <img src="https://simpleicons.org/icons/dbeaver.svg" alt="DBeaver">
-    </section>
-
-    <h2 class="heading" style="text-align: center; margin-bottom:100px;" >PROJECT</h2>
-    <section class="projects">
-        <div class="project-card">
-            <a href="https://mandomando.swygbro.com/" class="project-image-link">
-                <img src="https://github.com/lemonticsoul/web_advanced/assets/127959482/38290191-6eff-4fc7-9082-490d7770bbbe" alt="프로젝트 이미지" class="project-image">
-            </a>
-            <div class="project-description">
-                <p>만다라트 계획인 사이트를 만들어 배포하였습니다. 그림을 클릭하시면 저의 프로젝트를 만나보실 수 있습니다.</p>
-            </div>
+    
+    <section id="tech-stack">
+        <div class="section-text">
+          <h2>My Tech Stack</h2>
+          <p>제가 주로 사용하는 기술 스택들이에요.</p>
         </div>
-        <div class="project-card">
-            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMDVfMzEg%2FMDAxNzAxNzMyMzkwODY0.QFEj8eUEgAwHKhg-Q06JH5Ys66ig2LBVDeBJ_fFdFjMg.DpJt0IKvt_g-jAFpz03lNSW2QfkeE-9RCzuOOngKnR4g.PNG.care6060%2F20231205_082617.png&type=a340" alt="프로젝트 이미지" class="project-image">
-            <div class="project-description">
-                <p>학과 내 딥러닝을 이용하여 학과 알리미 챗봇을 만들었습니다.</p>
-            </div>
-        </div>
-        
-    </section>
+        <ul class="tech-stacks">
+          <li>
+            <img src="https://simpleicons.org/icons/spring.svg" alt="spring" />
+          </li>
+          <li>
+            <img src="https://simpleicons.org/icons/springboot.svg" alt="springboot" />
+          </li>
+          <li>
+            <img src="https://simpleicons.org/icons/springsecurity.svg" alt="springsecurity" />
+          </li>
+          <li>
+            <img src="https://simpleicons.org/icons/amazonaws.svg" alt="tech" />
+          </li>
+          <li>
+            <img src="https://simpleicons.org/icons/jsonwebtokens.svg" alt="jwt" />
+          </li>
+          
+          
+        </ul>
+      </section>
 
+   
+    <section id="project-section">
+        <div class="section-text">
+          <h2>Projects</h2>
+          <p>제가 진행한 프로젝트들이에요</p>
+        </div>
+        <div class="project-items">
+          <!-- 프로젝트 1-->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>만다라트 프로젝트:만두</h4>
+              <p class="project-desc">만다르트 계획서비스와 투두리스트의 결합 </p>
+              <div class="project-tech-stack">기술스택: React, Springboot, Docker, Oracle Cloud</div>
+    
+              <div class="project-link">
+                <a href="https://mandomando.swygbro.com/">
+                  <img src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f465a706-e0d6-433d-b7ac-b3347b9a4588">
+                  <div>Link</div>
+                </a>
+                <a href="https://github.com/swyp-3th-8team/backend">
+                
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 2 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>학과 인공지능 봇 프로젝트</h4>
+              <p class="project-desc">카카오톡 으로 폴백함수를 만들어 학과내 인공지능 봇 만들기</p>
+              <div class="project-tech-stack">기술스택: flask </div>
+              <!-- 바로가기 링크 -->
+              <div class="project-link">
+                
+                <a href="https://github.com/lemonticsoul/botbot">
+                  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMjNfMTA3%2FMDAxNjc3MTM0NzI3NTQ3.YClhnv5MmJ5rswUoPmDhebCnqxei6tiuRDbftbszt2Mg.3RCjJUw-NtG_4FirnT-mO79rVgCbAJtw6aGKuzt7ix4g.PNG.ehdcjf1004%2Fimage.png&type=a340">
+                  <div>View Code</div>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 3 -->
+          <article class="project-item">
+            <div class="project-thumbnail"></div>
+            <div class="project-content">
+              <h4>학생회 게시판 사업</h4>
+              <p class="project-desc">자바 스프링을 이용한 게시판 을 만들면서 학생들에게 배포</p>
+              <div class="project-tech-stack">기술스택: Spring boot,ngrok,tymeleaf</div>
+              <!-- 바로가기 링크 -->
+            </div>
+          </article>
+    
+    
+    
+          
 
 
     <footer>
-        <p>Designed and built by 서제호 with a lot of ☕</p>
-    </footer>
+        <div class="footer-upper">
+          <!-- 로고 -->
+          <img class="footer-logo" src="https://github.com/lemonticsoul/web_advanced/assets/127959482/f634e24f-2015-49e5-bde3-a41b82027576" alt="logo" />
+          <!-- 이메일/연락처/SNS -->
+          <div class="footer-content">
+            <div class="footer-contact">
+              
+              <a href="mailto:cookie00421@gmail.com">sjho714@naver.com</a>
+              <div class="footer-links">
+                <a href="https://github.com/lemonticsoul" target="_blank">
+                  <img style="width:40px;" src="https://simpleicons.org/icons/github.svg" alt="github" />
+                </a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 가로 선 -->
+        <div class="hr"></div>
+        <div class="madeby">
+          Designed and built by Pavan <span>MG</span>
+          with <span>Love</span> & <span>Coffee</span>
+          &copy; 2024
+        </div>
+      </footer>
+    </body>
 </body>
 </html>
