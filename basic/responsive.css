@@ -1,0 +1,12 @@
+.top-nav .top-logo{
+    width:95px;
+    height:60px;
+}
+
+.madeby span{
+    background-clip: text;
+
+}
+.nav-itmes-mobile{
+    display:flex;
+}
