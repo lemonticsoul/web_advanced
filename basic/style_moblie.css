@@ -1,0 +1,263 @@
+body {
+  
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .top-nav {
+    padding: 20px 10px;
+  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .top-logo {
+    width:  50px;
+    height: 50px;
+  }
+  
+  .nav-items {
+    /* 정렬 */
+    display: flex;
+    justify-content:space-between; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    /* flex-item 사이의 간격 */
+    gap: 10px;
+   
+  }
+  
+  .nav-items li {
+    /* 상단 메뉴 글자에 대한 스타일 */
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px; /* 130% */
+  }
+  
+  .top-sns {
+    display: flex;
+    gap: 10px;
+    align-items: right;
+  }
+  .top-sns img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* ------- 헤더 -----  */
+  
+  header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    color: #42446e;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 120.69% */
+    letter-spacing: -1px;
+  }
+  header img{
+    width:150px;
+    height: 150px;
+  }
+  header h1 span {
+    /* 글씨에 그라데이션 주는 효과 */
+    background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+    background-clip: text;
+    color: transparent; /* 글자 색을 투명하게 */
+  }
+  
+  /* ------- 기술 스택 섹션 ----- */
+  
+  .section-text {
+    padding-bottom: 50px;
+  }
+  .section-text h2 {
+    color: #42446e;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 50px;
+  }
+  .section-text p {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .tech-stacks {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tech-stacks img {
+    width:50px;
+    
+  
+  }
+  .tech-stacks li {
+    text-align: center;
+  }
+  
+  #tech-stack {
+    padding-bottom: 50px;
+  }
+  /* ------- 프로젝트 섹션 ----- */
+  #project-section {
+    padding-bottom: 50px;
+  }
+  .project-items {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 25%);
+    gap: 20px;
+  }
+  
+  .project-link img{
+    width:30px;
+  }
+  
+  .project-link a:hover{
+    color:#13b0f5;
+  }
+  .project-item {
+    box-shadow: 1px 1px 50px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 100%;
+  }
+  .project-thumbnail {
+    width: 100%;
+    height: 120px;
+    /* 위쪽 둥글게 둥글게 */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* 배경 이미지 가운데 정렬, 가득차게 */
+    background-image: url("https://source.unsplash.com/random/400×400");
+    
+    background-size: cover;
+  }
+  .project-content {
+    padding: 5px;
+    /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .project-content h4 {
+    color: #42446e;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+
+  .project-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .project-link a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+  }
+  
+  .project-desc {
+    color: #666;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+  }
+  
+  .project-tech-stack {
+    color: #42446e;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  
+  /* ---- footer ---- */
+  footer {
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-upper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .footer-contact {
+    display: flex;
+    gap: 20px;
+    align-items:center;
+  
+    color: #42446e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .footer-contact a {
+  
+    color: #42446e;
+    text-decoration: none;
+  }
+  footer .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  footer .footer-links img {
+    width:20px
+  }
+  
+  .hr {
+    width: 100%;
+    border-bottom: solid 1px #666;
+  }
+  
+  .madeby {
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+  }
+  .madeby span {
+    background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+    background-clip: text;
+    color: transparent; /* 글자 색을 투명하게 */
+  }
