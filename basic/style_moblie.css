@@ -157,7 +157,7 @@ body {
   }
   .project-thumbnail {
     width: 100%;
-    height: 120px;
+    height: 190px;
     /* 위쪽 둥글게 둥글게 */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
