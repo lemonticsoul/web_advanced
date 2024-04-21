@@ -21,3 +21,7 @@
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/e8c82cff-5aa5-4b16-83c0-caf2d96891dc)
 
 
+## Trusted 
+
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/6c369380-f6aa-496f-a41b-0df1c6e77960)
+
