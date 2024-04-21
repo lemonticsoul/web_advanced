@@ -26,3 +26,14 @@
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/6c369380-f6aa-496f-a41b-0df1c6e77960)
 
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/97cc12f7-7414-402d-9407-1f00efd63bfd)
+
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/a90de8bf-4350-4b00-b4a3-c59ba050e223)
+
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/02c586f5-441d-4a14-97eb-53e88d12319e)
+
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/d13a50d6-ba2c-406c-b6fc-7ce1be74e21f)
+
+## choose cowork
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/e4f79b02-82f1-4018-80b7-49640926602c)
+
+
