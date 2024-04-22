@@ -39,14 +39,19 @@
 ## Why? choose 
 
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/a98e661d-0f04-4ea9-ab2c-04234e570659)
-)
+
 
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/e833a38d-b51f-40de-8834-b4e24b7ff5a6)
-)
+
 
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/e81c6498-c02d-4091-b70d-0b3ac4a53e9a)
 
 
+
+## Explore Cowork
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/892ebfce-3295-41cc-8cf9-af446af8a65b)
+
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/34f87a74-e1eb-413d-9e1e-aeacd0455872)
 
 
 
