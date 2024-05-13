@@ -69,6 +69,9 @@
 
 ![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/ac0b6662-4319-40ef-a470-bf17c169ee70)
 
+![image](https://github.com/lemonticsoul/web_advanced/assets/127959482/3ce79b11-6500-409d-9550-a6746cf7020e)
+
+
 
 
 
